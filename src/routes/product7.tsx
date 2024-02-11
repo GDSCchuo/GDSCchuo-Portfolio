@@ -9,7 +9,7 @@ export const Product7 = () => {
   }, []);
   return (
     <>
-      <Text fontSize="5xl">product6</Text>
+      <Text fontSize="5xl">product7</Text>
       <React.StrictMode>
         <video controls muted ref={videoRef}>
           <source src={video_mp4} type="video/mp4" />
