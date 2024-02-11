@@ -29,7 +29,7 @@ export const DrawerMenu = (props: Props) => {
   return (
     <Drawer placement="left" isOpen={props.isOpen} onClose={props.onClose}>
       <DrawerOverlay />
-      <DrawerContent bg="gray.300">
+      <DrawerContent bg="green.200">
         <DrawerBody px={0} py={6}>
           <Flex direction="column">
             {MenuItems.map((item) => (
