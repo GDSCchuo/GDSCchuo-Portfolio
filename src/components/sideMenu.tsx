@@ -11,7 +11,7 @@ type Props = {
 export const SideMenu = (props: Props) => {
   const navigate = useNavigate();
   return (
-    <Box w={props.width} h="full" position="fixed" py={3} bg="gray.300">
+    <Box w={props.width} position="fixed" h="full" py={3} bg="green.200">
       {MenuItems.map((item) => (
         <Box>
           <CommonMenuButton
