@@ -45,8 +45,8 @@ export const App = () => {
 
             <Box
               w={{ base: "100vw", lg: "80vw" }}
-              ml={{ base: "1vw", lg: "21vw" }}
-              py={1}
+              ml={{ base: "0vw", lg: "19vw" }}
+              p="5"
             >
               {/* サイドメニューアイコンをクリックするとここが切り替わる */}
               <Routes>
