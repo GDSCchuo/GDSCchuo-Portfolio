@@ -23,7 +23,7 @@ export const App = () => {
           <Flex>
             <BrowserRouter>
               <SideMenu />
-              <Box w="70vw">
+              <Box w="70vw" ml="180px">
                 {/* サイドメニューアイコンをクリックするとここが切り替わる */}
                 <Routes>
                   <Route path="/" element={<Product1 />} />

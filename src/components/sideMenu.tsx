@@ -51,7 +51,7 @@ export const SideMenu = () => {
   ];
   const navigate = useNavigate();
   return (
-    <Box w="15vw" m="0px" bg="green.300">
+    <Box w="160px" h="full" m="0px" position="fixed" bg="green.300">
       {sideMenuItems.map((item) => (
         <label>
           <Box mt="20px" ml="10px">
