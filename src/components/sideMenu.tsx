@@ -1,66 +1,25 @@
-import { Box, Button, Icon } from "@chakra-ui/react";
-import {
-  MdMessage,
-  MdDashboard,
-  MdEmail,
-  MdAccountBox,
-  MdInsertChart,
-  MdWbSunny,
-  MdRateReview,
-} from "react-icons/md";
+import { Box } from "@chakra-ui/react";
 
 import { useNavigate } from "react-router-dom";
+import { CommonMenuButton } from "./commonButton";
+import { MenuItems } from "../MenuItems";
 
-export const SideMenu = () => {
-  const sideMenuItems = [
-    {
-      name: "Product1",
-      icon: MdDashboard,
-      path: "product1",
-    },
-    {
-      name: "Product2",
-      icon: MdAccountBox,
-      path: "product2",
-    },
-    {
-      name: "Product3",
-      icon: MdEmail,
-      path: "product3",
-    },
-    {
-      name: "Product4",
-      icon: MdMessage,
-      path: "product4",
-    },
-    {
-      name: "Product5",
-      icon: MdInsertChart,
-      path: "product5",
-    },
-    {
-      name: "Product6",
-      icon: MdWbSunny,
-      path: "product6",
-    },
-    {
-      name: "Product7",
-      icon: MdRateReview,
-      path: "product7",
-    },
-  ];
+type Props = {
+  width: string;
+};
+
+export const SideMenu = (props: Props) => {
   const navigate = useNavigate();
   return (
-    <Box w="160px" h="full" m="0px" position="fixed" bg="green.400">
-      {sideMenuItems.map((item) => (
-        <label>
-          <Box mt="20px" ml="10px">
-            <Button variant="ghost" onClick={() => navigate(item.path)}>
-              <Icon as={item.icon} w={7} h={7} mr="13px" />
-              {item.name}
-            </Button>
-          </Box>
-        </label>
+    <Box w={props.width} h="full" position="fixed" py={3} bg="gray.300">
+      {MenuItems.map((item) => (
+        <Box>
+          <CommonMenuButton
+            iconType={item.icon}
+            title={item.name}
+            onClick={() => navigate(item.path)}
+          />
+        </Box>
       ))}
     </Box>
   );
