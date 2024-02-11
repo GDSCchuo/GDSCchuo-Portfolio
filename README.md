@@ -60,3 +60,5 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 
 これする
 npm install react-router-dom
+npm install react-icons
+npm i @chakra-ui/icons
