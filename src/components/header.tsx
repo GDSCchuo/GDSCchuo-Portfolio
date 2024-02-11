@@ -4,11 +4,11 @@ export const Header = () => (
   <Flex
     as="header"
     position="fixed"
-    bg="red.300"
+    bg="red.400"
     width="full"
     height="128px"
     py={6}
   >
-    <Text fontSize="5xl">GDSCchuo-Portfolio</Text>
+    <Text fontSize="4xl">GDSCchuo-Portfolio</Text>
   </Flex>
 );
