@@ -1,10 +1,11 @@
 import React from "react";
+import { Text } from "@chakra-ui/react";
 
 export const NotFound = () => {
   return (
     <>
-      <h1>404</h1>
-      <h3>お探しのページは見つかりませんでした。</h3>
+      <Text fontSize="5xl">404</Text>
+      <Text fontSize="4xl">お探しのページは見つかりませんでした。</Text>
     </>
   );
 };
