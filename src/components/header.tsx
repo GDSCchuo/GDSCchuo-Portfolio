@@ -25,7 +25,7 @@ export const Header = (props: Props) => (
         <HamburgerIcon />
       </Button>
     </Hide>
-    <Text fontSize={{ base: "4xl", lg: "6xl" }} py={{ base: 1, lg: 0 }}>
+    <Text fontSize={{ base: "3xl", lg: "6xl" }} py={{ base: 2, lg: 0 }}>
       GDSCchuo-Portfolio
     </Text>
   </Flex>
