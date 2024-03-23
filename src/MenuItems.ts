@@ -1,47 +1,58 @@
+import { MdGroup, MdMessage } from "react-icons/md";
+import { IoMdBasketball } from "react-icons/io";
 import {
-  MdAccountBox,
-  MdDashboard,
-  MdEmail,
-  MdInsertChart,
-  MdMessage,
-  MdRateReview,
-  MdWbSunny,
-} from "react-icons/md";
+  FaCalculator,
+  FaRegBuilding,
+  FaBookOpen,
+  FaMagic,
+  FaHandPointRight,
+  FaRegLightbulb,
+} from "react-icons/fa";
 
 export const MenuItems = [
   {
-    name: "Product1",
-    icon: MdDashboard,
-    path: "product1",
+    name: "AboutUs",
+    icon: MdGroup,
+    path: "AboutUs",
   },
   {
-    name: "Product2",
-    icon: MdAccountBox,
-    path: "product2",
+    name: "BallCountGame",
+    icon: IoMdBasketball,
+    path: "BallCountGame",
   },
   {
-    name: "Product3",
-    icon: MdEmail,
-    path: "product3",
+    name: "CreditCal",
+    icon: FaCalculator,
+    path: "CreditCal",
   },
   {
-    name: "Product4",
+    name: "iTLFreeClassroom",
+    icon: FaRegBuilding,
+    path: "iTLFreeClassroom",
+  },
+  {
+    name: "iTLStudentBoard",
     icon: MdMessage,
-    path: "product4",
+    path: "iTLStudentBoard",
   },
   {
-    name: "Product5",
-    icon: MdInsertChart,
-    path: "product5",
+    name: "JLearn",
+    icon: FaBookOpen,
+    path: "JLearn",
   },
   {
-    name: "Product6",
-    icon: MdWbSunny,
-    path: "product6",
+    name: "MagicCircle",
+    icon: FaMagic,
+    path: "MagicCircle",
   },
   {
-    name: "Product7",
-    icon: MdRateReview,
-    path: "product7",
+    name: "PinPointMe",
+    icon: FaHandPointRight,
+    path: "PinPointMe",
+  },
+  {
+    name: "SolutionChallenge",
+    icon: FaRegLightbulb,
+    path: "SolutionChallenge",
   },
 ];
