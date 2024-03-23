@@ -11,6 +11,7 @@ export const Product3 = () => {
     <>
       <Text fontSize="5xl">product3</Text>
       <React.StrictMode>
+        <h1>sollution challenge 2024</h1>
         <video controls muted ref={videoRef}>
           <source src={video_mp4} type="video/mp4" />
         </video>
