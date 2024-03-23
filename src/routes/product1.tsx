@@ -10,6 +10,7 @@ export const Product1 = () => {
   }, []);
   return (
     <>
+      <Text fontSize="5xl">これはテストです</Text>
       <Text fontSize="5xl">product1</Text>
       <React.StrictMode>
         <video controls muted ref={videoRef}>
