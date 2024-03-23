@@ -13,7 +13,7 @@ import { SideMenu } from "./components/sideMenu";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import { Product1 } from "./routes/product1";
-import { Product2 } from "./routes/product2";
+import { Product2 } from "./routes/iTL free classroom";
 import { Product3 } from "./routes/isshiki";
 import { Product4 } from "./routes/product4";
 import { Product5 } from "./routes/product5";
