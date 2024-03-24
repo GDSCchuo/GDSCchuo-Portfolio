@@ -1,4 +1,4 @@
-import { Button, Icon, Spacer } from "@chakra-ui/react";
+import { Button, Icon } from "@chakra-ui/react";
 import { IconType } from "react-icons";
 
 type Props = {
@@ -15,16 +15,12 @@ export const CommonMenuButton = (props: Props) => (
     px={6}
     py={3}
     variant="ghost"
+    justifyContent="start"
     onClick={props.onClick}
   >
-    <Spacer />
-
     {/* アイコン */}
-    <Icon as={props.iconType} w={7} h={7} mr={2} />
-
+    <Icon as={props.iconType} w={7} h={7} mr={2} mx={5} />
     {/* ボタンタイトル */}
     {props.title}
-
-    <Spacer />
   </Button>
 );
