@@ -2,7 +2,7 @@ import { Text } from "@chakra-ui/react";
 import video_mp4 from "../videos/米津ハッピー.mp4";
 import { useEffect, useRef } from "react";
 import React from "react";
-export const Product7 = () => {
+export const JLearn = () => {
   const videoRef = useRef<HTMLVideoElement>(null);
   useEffect(() => {
     videoRef.current?.play();

@@ -5,7 +5,7 @@ export const NotFound = () => {
   return (
     <>
       <Text fontSize="5xl">404</Text>
-      <Text fontSize="4xl">お探しのページは見つかりませんでした。</Text>
+      <Text fontSize="4xl">お探しのページは見つかりませんでした。test</Text>
     </>
   );
 };
