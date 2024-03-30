@@ -8,6 +8,7 @@ export const Header = (props: Props) => (
   <Flex
     as="header"
     position="fixed"
+    zIndex={10}
     bg="teal.200"
     width="full"
     height="100px"
@@ -25,7 +26,11 @@ export const Header = (props: Props) => (
         <HamburgerIcon />
       </Button>
     </Hide>
-    <Text fontSize={{ base: "3xl", lg: "6xl" }} py={{ base: 2, lg: 0 }}>
+    <Text
+      fontSize={{ base: "3xl", lg: "6xl" }}
+      py={{ base: 2, lg: 0 }}
+      fontWeight={600}
+    >
       GDSCchuo-Portfolio
     </Text>
   </Flex>
