@@ -36,9 +36,9 @@ export const MenuItems = [
     path: "iTLStudentBoard",
   },
   {
-    name: "JLearn",
+    name: "JEARN",
     icon: FaBookOpen,
-    path: "JLearn",
+    path: "Jearn",
   },
   {
     name: "MagicCircle",

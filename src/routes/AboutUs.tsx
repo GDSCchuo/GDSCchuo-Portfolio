@@ -9,13 +9,13 @@ import {
 import { motion, useScroll } from "framer-motion";
 import { ImagePart } from "../components/ImagePart";
 import { ImageLink } from "../components/ImageLink";
-import GDSC1 from "../images/GDSCとは.png";
-import GDSC2 from "../images/GDSCとは2.png";
-import benkyoukai from "../images/benkyoukai_kunrenkou.png";
-import frienads from "../images/friends_papatomo.png";
-import programmer from "../images/job_programmer.png";
-import instagram from "../images/Instagram_Glyph_Gradient.png";
-import x from "../images/logo-black.png";
+import GDSC1 from "../images/AboutUs/GDSCとは.png";
+import GDSC2 from "../images/AboutUs/GDSCとは2.png";
+import benkyoukai from "../images/AboutUs/benkyoukai_kunrenkou.png";
+import frienads from "../images/AboutUs/friends_papatomo.png";
+import programmer from "../images/AboutUs/job_programmer.png";
+import instagram from "../images/AboutUs/Instagram_Glyph_Gradient.png";
+import x from "../images/AboutUs/logo-black.png";
 export const AboutUs = () => {
   const { scrollYProgress } = useScroll();
 
