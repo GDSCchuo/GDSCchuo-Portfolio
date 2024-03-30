@@ -17,7 +17,7 @@ import { BallCountGame } from "./routes/BallCountGame";
 import { CreditCal } from "./routes/CreditCal";
 import { ITLFreeClassroom } from "./routes/iTLFreeClassroom";
 import { ITLStudentBoard } from "./routes/iTLStudentBoard";
-import { JLearn } from "./routes/JLearn";
+import { Jearn } from "./routes/Jearn";
 import { MagicCircle } from "./routes/MagicCircle";
 import { PinPointMe } from "./routes/PinPointMe";
 import { SolutionChallenge } from "./routes/SolutionChallenge";
@@ -58,7 +58,7 @@ export const App = () => {
                 <Route path="CreditCal" element={<CreditCal />} />
                 <Route path="iTLFreeClassroom" element={<ITLFreeClassroom />} />
                 <Route path="iTLStudentBoard" element={<ITLStudentBoard />} />
-                <Route path="JLearn" element={<JLearn />} />
+                <Route path="Jearn" element={<Jearn />} />
                 <Route path="MagicCircle" element={<MagicCircle />} />
                 <Route path="PinPointMe" element={<PinPointMe />} />
                 <Route
