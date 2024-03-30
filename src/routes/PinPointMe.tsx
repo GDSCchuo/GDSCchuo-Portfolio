@@ -1,5 +1,6 @@
 import React from "react";
-import { Box, Text, Heading, Divider } from '@chakra-ui/react';
+import { Box, Text, Heading, Flex, Image, Divider } from '@chakra-ui/react';
+import PinPointMeScreenshot from '../images/PinPointMe/PinPointMeScreenshot.png';
 
 export const PinPointMe = () => {
   return (
@@ -25,10 +26,22 @@ export const PinPointMe = () => {
         災害時に家族や友人が安全であることを知ることは、精神的な安心感につながります。
         このアプリによって、位置情報を通じて連絡を取り合い、互いに励まし合って精神的に支え合うことができます。
       </Text>
-      <Text fontSize="md" mb={4}>
+      <Text fontSize="md" mb={12}>
         <b>使用したGoogleの技術:</b> Firebase, Google Map<br />
         これらの技術により、リアルタイムでの位置情報共有と高度な地図機能を実現しています。
-      </Text>     
+      </Text>
+      <Divider mb={4} />
+      <Flex direction="column" align="center" mb={8}>
+        <Heading as="h2" size="md" mb={2} color="orange.400">
+          アプリ画面
+        </Heading>
+        <Image
+          src={PinPointMeScreenshot}
+          alt="PinPointMeアプリのスクリーンショット"
+          objectFit="contain"
+          maxWidth="100%"
+          maxHeight="400px"/>
+      </Flex>      
     </Box>
   );
 };
