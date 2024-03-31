@@ -12,13 +12,15 @@ import { SideMenu } from "./components/sideMenu";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import { Product1 } from "./routes/product1";
-import { Product2 } from "./routes/product2";
-import { Product3 } from "./routes/product3";
-import { Product4 } from "./routes/product4";
-import { Product5 } from "./routes/product5";
-import { Product6 } from "./routes/product6";
-import { Product7 } from "./routes/product7";
+import { AboutUs } from "./routes/AboutUs";
+import { BallCountGame } from "./routes/BallCountGame";
+import { CreditCal } from "./routes/CreditCal";
+import { ITLFreeClassroom } from "./routes/iTLFreeClassroom";
+import { ITLStudentBoard } from "./routes/iTLStudentBoard";
+import { JLearn } from "./routes/JLearn";
+import { MagicCircle } from "./routes/MagicCircle";
+import { PinPointMe } from "./routes/PinPointMe";
+import { SolutionChallenge } from "./routes/SolutionChallenge";
 import { NotFound } from "./routes/NotFound";
 import { DrawerMenu } from "./components/drawerMenu";
 
@@ -50,14 +52,19 @@ export const App = () => {
             >
               {/* サイドメニューアイコンをクリックするとここが切り替わる */}
               <Routes>
-                <Route path="/" element={<Product1 />} />
-                <Route path="product1" element={<Product1 />} />
-                <Route path="product2" element={<Product2 />} />
-                <Route path="product3" element={<Product3 />} />
-                <Route path="product4" element={<Product4 />} />
-                <Route path="product5" element={<Product5 />} />
-                <Route path="product6" element={<Product6 />} />
-                <Route path="product7" element={<Product7 />} />
+                <Route path="/" element={<AboutUs />} />
+                <Route path="/AboutUs" element={<AboutUs />} />
+                <Route path="BallCountGame" element={<BallCountGame />} />
+                <Route path="CreditCal" element={<CreditCal />} />
+                <Route path="iTLFreeClassroom" element={<ITLFreeClassroom />} />
+                <Route path="iTLStudentBoard" element={<ITLStudentBoard />} />
+                <Route path="JLearn" element={<JLearn />} />
+                <Route path="MagicCircle" element={<MagicCircle />} />
+                <Route path="PinPointMe" element={<PinPointMe />} />
+                <Route
+                  path="SolutionChallenge"
+                  element={<SolutionChallenge />}
+                />
                 <Route path="*" element={<NotFound />} />
               </Routes>
             </Box>

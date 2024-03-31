@@ -13,7 +13,7 @@ export const SideMenu = (props: Props) => {
   return (
     <Box w={props.width} position="fixed" h="full" py={3} bg="green.200">
       {MenuItems.map((item) => (
-        <Box>
+        <Box textAlign="left">
           <CommonMenuButton
             iconType={item.icon}
             title={item.name}

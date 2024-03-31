@@ -1,18 +1,17 @@
 import { Text } from "@chakra-ui/react";
-import React from "react";
+import video_mp4 from "../videos/うるさいヤギ.mp4";
 import { useEffect, useRef } from "react";
-import video_mp4 from "../videos/Dubidubidu猫（ちぴちゃぱ）.mp4";
-
-export const CreditCal = () => {
+import React from "react";
+export const AboutUs = () => {
   const videoRef = useRef<HTMLVideoElement>(null);
   useEffect(() => {
     videoRef.current?.play();
   }, []);
   return (
     <>
-      <Text fontSize="5xl">これはテストです</Text>
-      <Text fontSize="5xl">product1</Text>
+      <Text fontSize="5xl">product3</Text>
       <React.StrictMode>
+        <h1>sollution challenge 2024</h1>
         <video controls muted ref={videoRef}>
           <source src={video_mp4} type="video/mp4" />
         </video>
