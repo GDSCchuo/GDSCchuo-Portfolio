@@ -27,6 +27,10 @@ export const SolutionChallenge = () => {
   useEffect(() => {
     videoRef.current?.play();
   }, []);
+  const handleClick = () => {
+    const link = "https://rn-vn.github.io/solution-2024/";
+    window.open(link, "_blank");
+  };
 
   return (
     <>
@@ -137,12 +141,7 @@ export const SolutionChallenge = () => {
         <br />
 
         <Center>
-          <Link
-            fontSize="2xl"
-            as="b"
-            href="https://rn-vn.github.io/solution-2024/"
-            isExternal
-          >
+          <Link fontSize="2xl" as="b" onClick={handleClick} isExternal>
             このリンクからSDGsビンゴゲームのWebアプリケーションにアクセスできます
             <ExternalLinkIcon fontSize="2xl" as="b" />
           </Link>

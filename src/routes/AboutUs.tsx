@@ -150,24 +150,28 @@ export const AboutUs = () => {
       </VStack>
       <VStack>
         <HStack>
-          <Box padding={40}>
-            <motion.div
-              whileHover={{ scale: [null, 1.5, 1.4] }}
-              transition={{ duration: 0.3 }}
-            >
-              <ImageLink
-                link="https://www.instagram.com/gdsc_chuo/?img_index=1"
-                src={instagram}
-              />
-            </motion.div>
+          <Box display="flex" justifyContent="center" margin={8}>
+            <div style={{ width: 200, height: 200 }}>
+              <motion.div
+                whileHover={{ scale: [null, 1.5, 1.4] }}
+                transition={{ duration: 0.3 }}
+              >
+                <ImageLink
+                  link="https://www.instagram.com/gdsc_chuo/?img_index=1"
+                  src={instagram}
+                />
+              </motion.div>
+            </div>
           </Box>
-          <Box padding={40}>
-            <motion.div
-              whileHover={{ scale: [null, 1.5, 1.4] }}
-              transition={{ duration: 0.3 }}
-            >
-              <ImageLink link="https://twitter.com/GDSC_chuo" src={x} />
-            </motion.div>
+          <Box display="flex" justifyContent="center" margin={8}>
+            <div style={{ width: 200, height: 200 }}>
+              <motion.div
+                whileHover={{ scale: [null, 1.5, 1.4] }}
+                transition={{ duration: 0.3 }}
+              >
+                <ImageLink link="https://twitter.com/GDSC_chuo" src={x} />
+              </motion.div>
+            </div>
           </Box>
         </HStack>
       </VStack>
