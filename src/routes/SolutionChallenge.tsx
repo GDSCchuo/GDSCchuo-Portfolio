@@ -11,11 +11,7 @@ import Bingo1star from "../images/SolutionChallenge/SDGsBingo1star.jpg";
 import BingoLogin from "../images/SolutionChallenge/SDGsBingoLogin.png";
 import BingoRegister from "../images/SolutionChallenge/SDGsBingoRegister.png";
 import Bingobingo from "../images/SolutionChallenge/SDGsBingobingo.jpg";
-import Bingogoal11 from "../images/SolutionChallenge/SDGsBingogoal11.png";
-import Bingogoal13 from "../images/SolutionChallenge/SDGsBingogoal13.png";
 import Bingogoal14 from "../images/SolutionChallenge/SDGsBingogoal14.png";
-import Bingogoal16 from "../images/SolutionChallenge/SDGsBingogoal16.png";
-import Bingogoal5 from "../images/SolutionChallenge/SDGsBingogoal5.png";
 import Bingohome from "../images/SolutionChallenge/SDGsBingohome.png";
 import Bingostar2 from "../images/SolutionChallenge/SDGsBingostar2.jpg";
 import Bingostudy2 from "../images/SolutionChallenge/SDGsBingostudy2.jpg";
@@ -64,7 +60,7 @@ export const SolutionChallenge = () => {
         </Center>
         <br />
         <Center>
-          <Image src={Bingo1star} w="235.5px" h="363px" />
+          <Image src={BingoRegister} w="235.5px" h="363px" />
         </Center>
         <Center fontSize="xl" as="samp">
           2.ログイン画面に戻って、登録したメールアドレスとパスワードでログインする
@@ -148,6 +144,7 @@ export const SolutionChallenge = () => {
         </Center>
       </Box>
       <React.StrictMode></React.StrictMode>
+     
     </>
   );
 };
