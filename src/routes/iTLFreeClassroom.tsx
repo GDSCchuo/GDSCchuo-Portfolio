@@ -1,14 +1,12 @@
-import { Box, Center, Image, Text, Flex, Heading } from "@chakra-ui/react";
+import { Box, Center, Image, Text, Flex } from "@chakra-ui/react";
 import video_mp4 from "../images/iTLFreeClassroom/iTLFreeClassroom.mp4";
-import login_png from "../images/iTLFreeClassroom/ログイン.jpg";
-import select_png from "../images/iTLFreeClassroom/フロア選択.jpg";
-import floor_png from "../images/iTLFreeClassroom/フロアガイド.jpg";
-import current_png from "../images/iTLFreeClassroom/現在の授業.jpg";
-import class_png from "../images/iTLFreeClassroom/授業情報.jpg";
-import information1_png from "../images/iTLFreeClassroom/Class_Information1.jpg";
-import information2_png from "../images/iTLFreeClassroom/Class_Information2.jpg";
-
-
+import login_png from "../images/iTLFreeClassroom/login.jpg";
+import select_png from "../images/iTLFreeClassroom/select.jpg";
+import floor_png from "../images/iTLFreeClassroom/floor.jpg";
+import current_png from "../images/iTLFreeClassroom/current.jpg";
+import class_png from "../images/iTLFreeClassroom/class.jpg";
+import information1_png from "../images/iTLFreeClassroom/Information1.jpg";
+import information2_png from "../images/iTLFreeClassroom/Information2.jpg";
 
 import { useEffect, useRef } from "react";
 import React from "react";
@@ -47,43 +45,42 @@ export const ITLFreeClassroom = () => {
             ・ログイン機能
           </Text>
           <Center>
-              <Image src={login_png} alt="ログイン画面" />
+            <Image src={login_png} alt="ログイン画面" />
           </Center>
 
           <Text mb="5" fontSize={{ base: "md", md: "lg" }}>
             ・フロアガイド
           </Text>
           <Center>
-              <Image src={floor_png} alt="フロアガイド" />
+            <Image src={floor_png} alt="フロアガイド" />
           </Center>
           <Center>
-              <Image src={select_png} alt="フロア選択" />
+            <Image src={select_png} alt="フロア選択" />
           </Center>
 
           <Text mb="5" fontSize={{ base: "md", md: "lg" }}>
             ・授業情報
           </Text>
           <Center>
-              <Image src={class_png} alt="授業情報" />
+            <Image src={class_png} alt="授業情報" />
           </Center>
           <Center>
-              <Image src={information1_png} alt="information1" />
+            <Image src={information1_png} alt="information1" />
           </Center>
           <Center>
-              <Image src={information2_png} alt="information2" />
+            <Image src={information2_png} alt="information2" />
           </Center>
 
           <Text mb="5" fontSize={{ base: "md", md: "lg" }}>
             ・リアルタイム教室利用状況
           </Text>
           <Center>
-              <Image src={current_png} alt="現在の授業" />
+            <Image src={current_png} alt="現在の授業" />
           </Center>
 
           <Text mb="5" fontSize={{ base: "md", md: "lg" }}>
             ・授業リコメンド機能
           </Text>
-
         </Box>
       </Flex>
     </>
