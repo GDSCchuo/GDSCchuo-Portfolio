@@ -1,4 +1,3 @@
-import React from "react";
 import { Box, Center, Image, Text, Flex, Heading } from "@chakra-ui/react";
 import old_img from "../images/JEARN/old_JEARN.png";
 import new_img from "../images/JEARN/new_JEARN.png";
@@ -7,7 +6,7 @@ export const Jearn = () => {
   return (
     <Box padding={{ base: "4", md: "8", lg: "12" }}>
       <Center>
-        <Heading as="h1" size="2xl" marginTop="6" marginBottom="6">
+        <Heading size="2xl" marginTop="6" marginBottom="6">
           JEARN
         </Heading>
       </Center>
