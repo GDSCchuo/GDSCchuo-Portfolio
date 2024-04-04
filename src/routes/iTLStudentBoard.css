@@ -1,0 +1,118 @@
+#root > div.css-bxes4f > div > div{
+    width: auto;  
+}
+
+/* コンテナ */
+#container {
+    width: 100%;
+    height: 100%;
+    box-sizing:border-box
+}
+
+
+#text-box{
+    width: fit-content;
+    text-align: justify;
+    margin: 0 auto;
+    margin-bottom: auto;
+    padding: 2rem 4rem;
+    padding-top: 0;
+    font-size: 1.3rem;
+}
+
+.subtitle{
+    text-align: center;
+    margin: auto;
+}
+#text1{
+    text-align: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    margin: 0 auto;
+    margin-bottom: 0.5rem;
+    padding-top: 1rem;
+}
+/* 見出し */
+#container > h1 {
+    text-align: center;
+    font-size: 2.8rem;
+    font-weight: bold;
+    width: fit-content;
+    margin: auto;
+    margin-top: 3.5rem;
+    position: relative;
+    padding: 0.5rem 2rem;
+    border-top: solid 2px black;
+    border-bottom: solid 2px black;
+  }
+
+  #container > h1:before, h1:after {
+    content: '';
+    position: absolute;
+    top: -7px;
+    width: 2px;
+    height: -webkit-calc(100% + 14px);
+    height: calc(100% + 14px);
+    background-color: black;
+  }
+  #container >h1:before {
+    left: 7px;
+  }
+  #container >h1:after {
+    right: 7px;
+  }
+
+  /* 小見出し */
+  .title2  > h2 {
+    width: fit-content;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 3rem;
+    font-size: 2rem;
+    position: relative;
+    display: inline-block;
+    padding: 0 55px;
+    padding-bottom: 0.5rem;
+  }
+  
+  .title2  > h2:before, .title2  > h2:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    display: inline-block;
+    width: 45px;
+    height: 2px;
+    border-top: solid 1px black;
+    border-bottom: solid 1px black;
+  }
+  
+  .title2  > h2:before {
+    left:0;
+  }
+  .title2  > h2:after {
+    right: 0;
+  }
+
+  .title2{
+    text-align: center;
+  }
+
+  
+
+  /* カルセール */
+  #slide > div{
+    margin: auto;
+}
+
+#root > div.css-10wfiel > header{
+    position: fixed;
+    z-index: 100;
+}
+
+.title2  > h2 > span{
+  display: inline-block;
+}
+
+
+
+
