@@ -153,33 +153,37 @@ export const AboutUs = () => {
           <Divider borderWidth="4px" borderColor="red" />
         </Box>
       </VStack>
-      <VStack>
-        <HStack>
-          <Box display="flex" justifyContent="center" margin={8}>
-            <div style={{ width: 200, height: 200 }}>
-              <motion.div
-                whileHover={{ scale: [null, 1.5, 1.4] }}
-                transition={{ duration: 0.3 }}
-              >
-                <ImageLink
-                  link="https://www.instagram.com/gdsc_chuo/?img_index=1"
-                  src={instagram}
-                />
-              </motion.div>
-            </div>
-          </Box>
-          <Box display="flex" justifyContent="center" margin={8}>
-            <div style={{ width: 200, height: 200 }}>
-              <motion.div
-                whileHover={{ scale: [null, 1.5, 1.4] }}
-                transition={{ duration: 0.3 }}
-              >
-                <ImageLink link="https://twitter.com/GDSC_chuo" src={x} />
-              </motion.div>
-            </div>
-          </Box>
-        </HStack>
-      </VStack>
+      <Flex
+        direction={direction}
+        gap={4}
+        align="center"
+        justify="center"
+        borderWidth="2px"
+      >
+        <Box display="flex" justifyContent="center" margin={8}>
+          <div style={{ width: 200, height: 200 }}>
+            <motion.div
+              whileHover={{ scale: [null, 1.5, 1.4] }}
+              transition={{ duration: 0.3 }}
+            >
+              <ImageLink
+                link="https://www.instagram.com/gdsc_chuo/?img_index=1"
+                src={instagram}
+              />
+            </motion.div>
+          </div>
+        </Box>
+        <Box display="flex" justifyContent="center" margin={8}>
+          <div style={{ width: 200, height: 200 }}>
+            <motion.div
+              whileHover={{ scale: [null, 1.5, 1.4] }}
+              transition={{ duration: 0.3 }}
+            >
+              <ImageLink link="https://twitter.com/GDSC_chuo" src={x} />
+            </motion.div>
+          </div>
+        </Box>
+      </Flex>
     </>
   );
 };
