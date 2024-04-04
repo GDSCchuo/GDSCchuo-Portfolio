@@ -1,18 +1,7 @@
-import React from "react";
-import {
-  Box,
-  Divider,
-  HStack,
-  StackDivider,
-  Text,
-  VStack,
-  Image,
-} from "@chakra-ui/react";
+import { Box, Text, Image } from "@chakra-ui/react";
 import { motion, useScroll } from "framer-motion";
-import { ImagePart } from "../components/ImagePart";
-import { ImageLink } from "../components/ImageLink";
-import CreditCal_img from "/Users/loulou/Desktop/pf_GDSC/GDSCchuo-Portfolio/src/images/Credit Calc/GDSC総会2023.12.21.jpg";
-import second_slide from "/Users/loulou/Desktop/pf_GDSC/GDSCchuo-Portfolio/src/images/Credit Calc/GDSC総会2023.12.21 (1).jpg";
+import CreditCal_img from "../images/CreditCalc/Calc2.jpg";
+import second_slide from "../images/CreditCalc/Calc2.jpg";
 
 export const CreditCal = () => {
   const { scrollYProgress } = useScroll();
@@ -91,12 +80,11 @@ export const CreditCal = () => {
           transition={{ duration: 1, delay: 2 }}
         >
           <Text fontSize="6xl" padding={3} fontWeight={500}>
-          Credit Calculator for Chuo Student😏
+            Credit Calculator for Chuo Student
           </Text>
         </motion.div>
       </Box>
 
-      
       {/* 画像を挿入 */}
       <Image src={CreditCal_img} alt="Image Alt Text" />
       <Image src={second_slide} alt="Image Alt Text" />
