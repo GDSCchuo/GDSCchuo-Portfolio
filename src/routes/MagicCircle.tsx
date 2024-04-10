@@ -11,7 +11,7 @@ export const MagicCircle = () => {
   }, []);
   return (
     <>
-      <Text fontSize="5xl" ml={6}>iTL Mgic Circle HP</Text>
+      <Text fontSize="5xl" ml={6}>iTL Magic Circle HP</Text>
       <Text fontSize="md" mt={4} ml={8} mb={1}><b>＜開発期間＞</b></Text>
       <Text ml={10} mb={4}>2022.12 - 2023.7</Text>
       <Text ml={8} mb={1}><b>＜背景・概要＞</b></Text>
