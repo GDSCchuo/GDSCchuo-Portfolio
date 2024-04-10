@@ -1,12 +1,14 @@
 import {
   Box,
   Divider,
+  Flex,
   HStack,
-  StackDivider,
   Text,
   VStack,
+  useBreakpointValue,
+  FlexProps,
 } from "@chakra-ui/react";
-import { motion, useScroll } from "framer-motion";
+import { motion } from "framer-motion";
 import { ImagePart } from "../components/ImagePart";
 import { ImageLink } from "../components/ImageLink";
 import GDSC1 from "../images/AboutUs/GDSCとは.png";
@@ -17,8 +19,10 @@ import programmer from "../images/AboutUs/job_programmer.png";
 import instagram from "../images/AboutUs/Instagram_Glyph_Gradient.png";
 import x from "../images/AboutUs/logo-black.png";
 export const AboutUs = () => {
-  const { scrollYProgress } = useScroll();
-
+  const direction = useBreakpointValue({
+    base: "column",
+    md: "row",
+  }) as FlexProps["direction"];
   return (
     <>
       <Box
@@ -65,10 +69,6 @@ export const AboutUs = () => {
         color="white"
         margin={3}
       >
-        <motion.path
-          d="M 0, 20 a 20, 20 0 1,0 40,0 a 20, 20 0 1,0 -40,0"
-          style={{ pathLength: scrollYProgress }}
-        />
         <motion.div
           initial={{ opacity: 0, x: -100 }}
           animate={{ opacity: 1, x: 0 }}
@@ -115,66 +115,75 @@ export const AboutUs = () => {
           <Divider borderWidth="4px" borderColor="blue" />
         </Box>
       </VStack>
-      <VStack>
-        <HStack
-          divider={<StackDivider borderColor="black" />}
-          spacing={4}
-          align="stretch"
-          borderWidth="2px"
-        >
-          <Box w="20vw">
-            <Text fontSize="4xl" textAlign="center">
-              開発
-            </Text>
-            <img src={programmer} alt=""></img>
-          </Box>
-          <Box w="20vw">
-            <Text fontSize="4xl" textAlign="center">
-              勉強会
-            </Text>
-            <img src={benkyoukai} alt=""></img>
-          </Box>
-          <Box w="20vw">
-            <Text fontSize="4xl" textAlign="center">
-              イベント開催
-            </Text>
-            <img src={frienads} alt=""></img>
-          </Box>
-        </HStack>
-      </VStack>
+      <Flex
+        direction={direction}
+        gap={4}
+        align="center"
+        justify="center"
+        borderWidth="2px"
+      >
+        <Box w={{ base: "75%", md: "30%" }}>
+          <Text fontSize="4xl" textAlign="center">
+            開発
+          </Text>
+          <img src={programmer} alt=""></img>
+        </Box>
+        <Divider
+          orientation={direction === "row" ? "vertical" : "horizontal"}
+        />
+        <Box w={{ base: "75%", md: "30%" }}>
+          <Text fontSize="4xl" textAlign="center">
+            勉強会
+          </Text>
+          <img src={benkyoukai} alt=""></img>
+        </Box>
+        <Divider
+          orientation={direction === "row" ? "vertical" : "horizontal"}
+        />
+        <Box w={{ base: "75%", md: "30%" }}>
+          <Text fontSize="4xl" textAlign="center">
+            イベント開催
+          </Text>
+          <img src={frienads} alt=""></img>
+        </Box>
+      </Flex>
       <VStack>
         <Box margin="16px">
           <Text fontSize="6xl">SNS</Text>
           <Divider borderWidth="4px" borderColor="red" />
         </Box>
       </VStack>
-      <VStack>
-        <HStack>
-          <Box display="flex" justifyContent="center" margin={8}>
-            <div style={{ width: 200, height: 200 }}>
-              <motion.div
-                whileHover={{ scale: [null, 1.5, 1.4] }}
-                transition={{ duration: 0.3 }}
-              >
-                <ImageLink
-                  link="https://www.instagram.com/gdsc_chuo/?img_index=1"
-                  src={instagram}
-                />
-              </motion.div>
-            </div>
-          </Box>
-          <Box display="flex" justifyContent="center" margin={8}>
-            <div style={{ width: 200, height: 200 }}>
-              <motion.div
-                whileHover={{ scale: [null, 1.5, 1.4] }}
-                transition={{ duration: 0.3 }}
-              >
-                <ImageLink link="https://twitter.com/GDSC_chuo" src={x} />
-              </motion.div>
-            </div>
-          </Box>
-        </HStack>
-      </VStack>
+      <Flex
+        direction={direction}
+        gap={4}
+        align="center"
+        justify="center"
+        borderWidth="2px"
+      >
+        <Box display="flex" justifyContent="center" margin={8}>
+          <div style={{ width: 200, height: 200 }}>
+            <motion.div
+              whileHover={{ scale: [null, 1.5, 1.4] }}
+              transition={{ duration: 0.3 }}
+            >
+              <ImageLink
+                link="https://www.instagram.com/gdsc_chuo/?img_index=1"
+                src={instagram}
+              />
+            </motion.div>
+          </div>
+        </Box>
+        <Box display="flex" justifyContent="center" margin={8}>
+          <div style={{ width: 200, height: 200 }}>
+            <motion.div
+              whileHover={{ scale: [null, 1.5, 1.4] }}
+              transition={{ duration: 0.3 }}
+            >
+              <ImageLink link="https://twitter.com/GDSC_chuo" src={x} />
+            </motion.div>
+          </div>
+        </Box>
+      </Flex>
     </>
   );
 };
